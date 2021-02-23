@@ -1,0 +1,42 @@
+{
+  "name": "kutsankaplan.com",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Source-code of my personal website.",
+  "homepage": "https://kutsankaplan.com",
+  "repository": "github:kutsan/kutsankaplan.com",
+  "license": "GPL-3.0",
+  "author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
+  "scripts": {
+    "prestart": "npm run format && npm run lint",
+    "start": "vite",
+    "dev": "vite",
+    "serve": "vite preview",
+    "prebuild": "npm run prestart",
+    "build": "tsc && vite build",
+    "format": "npm run format:stylelint && npm run format:prettier",
+    "format:prettier": "prettier --loglevel='silent' --write '**/*.{js,ts,tsx,json,md}'",
+    "format:stylelint": "stylelint --fix 'src/**/*.css'",
+    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "lint:eslint": "eslint --ignore-pattern 'vite.config.ts' --ignore-path .gitignore .",
+    "lint:stylelint": "stylelint 'src/**/*.css'",
+    "deploy": "NODE_ENV=production npm run build && gh-pages --dist 'dist' --branch 'release' --message \"chore: deploy $(git describe --abbrev=0 --tags)\""
+  },
+  "dependencies": {
+    "preact": "^10.5.9"
+  },
+  "devDependencies": {
+    "@kutsan/config": "^0.11.0",
+    "@prefresh/vite": "^2.0.0",
+    "@rushstack/eslint-patch": "^1.0.6",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "eslint": "^7.20.0",
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.11.0",
+    "typescript": "^4.1.3",
+    "vite": "^2.0.2",
+    "vite-plugin-html": "^2.0.2"
+  }
+}
