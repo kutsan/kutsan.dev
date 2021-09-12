@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
 
+import '@fontsource/inconsolata'
 import './App.css'
 
 const App = (): ReactElement => {
