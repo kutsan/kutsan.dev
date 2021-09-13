@@ -23,7 +23,6 @@
     "deploy": "NODE_ENV=production npm run build && gh-pages --dist 'dist' --branch 'release' --message \"chore: deploy $(git describe --abbrev=0 --tags)\""
   },
   "dependencies": {
-    "@fontsource/inconsolata": "^4.5.0",
     "preact": "^10.5.9"
   },
   "devDependencies": {
