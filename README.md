@@ -1,6 +1,6 @@
-<img width="100" src="https://github.com/kutsan/kutsankaplan.com/raw/master/.github/assets/logo.png" alt="Logo" />
+<img width="100" src="https://github.com/kutsan/kutsan.dev/raw/master/.github/assets/logo.png" alt="Logo" />
 
-# kutsankaplan.com
+# kutsan.dev
 
 Source-code of personel website.
 
