@@ -20,9 +20,9 @@ const App = (): ReactElement => {
       <div className="author__name">kutsan kaplan</div>
       <a
         className="author__link author__link--email"
-        href="mailto:me@kutsankaplan.com"
+        href="mailto:me@kutsan.dev"
       >
-        me@kutsankaplan.com
+        me@kutsan.dev
       </a>
 
       <div className="author__links">
